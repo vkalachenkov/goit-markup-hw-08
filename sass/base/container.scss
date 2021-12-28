@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    background-color: $primary-white-color;
+    color: $primary-text-color;
+}
+
+
+.page-container {
+    width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.portfolio-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}

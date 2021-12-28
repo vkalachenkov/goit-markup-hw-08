@@ -1,0 +1,13 @@
+{
+  "recommendations": [
+    "kamikillerto.vscode-colorize",
+    "formulahendry.auto-rename-tag",
+    "atishay-jain.all-autocomplete",
+    "mrmlnc.vscode-autoprefixer",
+    "hookyqr.beautify",
+    "thekalinga.bootstrap4-vscode",
+    "coenraads.bracket-pair-colorizer",
+    "goit.vscode-activity",
+    "dbaeumer.vscode-eslint"
+  ]
+}

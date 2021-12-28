@@ -1,0 +1,46 @@
+.page-header__logo {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: $accent-color;
+    &:hover, &:focus {
+        color: $accent-color;
+    }
+}
+.page-header__logo-second {
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: #000;
+}
+.footer-logo {
+    margin-bottom: 20px;
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+.footer-logo__one {
+    text-decoration: none;
+    color: $accent-color;
+    &:hover, &:focus {
+        color: $accent-color;
+    }
+}
+.footer-logo__two {
+    color: $primary-white-color;
+}

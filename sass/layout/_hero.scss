@@ -1,0 +1,50 @@
+.hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    margin: 0 auto;
+    text-align: center;
+    background: $secondary-background-color;
+}
+.hero-title {
+    margin-top: 0px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    color: $primary-white-color;
+}
+.button {
+    display: inline-block;
+    padding: 10px 32px;
+    min-width: 200px;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    align-items: center;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    border-radius: 4px solid;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: filter 250ms $transition-timing-function;
+    color: $primary-white-color;
+    background-color: $accent-color;
+    &:hover, &:focus {
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+}
+.overlay {
+    max-width: 1600px;
+    min-height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.5),
+            rgba(47, 48, 58, 0.3)),
+        url(../images/img-overlay.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
