@@ -1,27 +1,65 @@
 .team {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding: 60px 0px;
+    margin: 0px auto;
     background: #f5f4fa;
+
+    @media screen and (min-width: 1200px) {
+       padding: 94px 0px;
+    }
+
 }
 .team-list {
-    display: flex;
-    flex-wrap: wrap;
+   
+    @media screen and (min-width: 768px) {
+        margin: -15px;
+        
+    }
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
 }
 .team-list__item {
-    margin-right: 30px;
-    text-align: center;
-    align-items: center;
+    max-width: 450px;
+    &:not(:last-child) {
+        @media screen and (max-width: 767px) {
+            margin-bottom: 30px;
+        }
+    }
+    
     background: #ffffff;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-    &:last-child {
-        margin-right: 0;
+    
+    @media screen and (min-width: 768px) {
+        max-width: 354px;
+        width: calc((100% - 4 * 15px) / 2);
+        margin: 15px;
+
+        
+    }
+    
+    @media screen and (min-width: 1200px) {
+        max-width: 270px;
+        margin-right: 15px;
+        text-align: center;
+        align-items: center;
+        &:last-child {
+            margin-right: 0;
+        }
     }
 }
 .team-box {
+    text-align: center;
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 24px;
+    
+
+    @media screen and (min-width: 1200px) {
+    padding: 30px 0px;
+    }
 }
 .team-box__title {
     margin: 0;
@@ -42,9 +80,10 @@
 }
 .social-list {
     display: flex;
+    justify-content: center;
     margin-top: 15px;
-    padding-left: 32px;
-    padding-right: 32px;
+    
+    
 }
 .social-list__item {
     margin-right: 10px;
@@ -69,8 +108,8 @@
 .social-list__icon {
     transition: fill 250ms $transition-timing-function;
     fill: $primary-icon-color;
-    .social-list__link:hover &,
-    .social-list__link:focus & {
+    .social-list__item:hover &,
+    .social-list__item:focus & {
         fill: $primary-white-color;
     }
 }

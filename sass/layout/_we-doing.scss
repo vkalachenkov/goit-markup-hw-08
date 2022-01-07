@@ -1,6 +1,11 @@
 .we-doing {
     padding-bottom: 94px;
     background: var(--primary-white-color);
+    
+    @media only screen and (max-width: 1199px) {
+        display: none;
+
+    }
 }
 .we-doing-list {
     display: flex;
@@ -14,13 +19,17 @@
 }
 .section-title {
     margin: 0 auto;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     font-weight: 700;
     font-size: 36px;
     text-align: center;
     letter-spacing: 0.03em;
     line-height: 1.17;
     color: $title-tex-color;
+    @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+        
+    }
 }
 .img-doing {
     position: relative;

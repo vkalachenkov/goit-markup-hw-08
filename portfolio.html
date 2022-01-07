@@ -22,11 +22,35 @@
     <!--header-->
     <header class="page-header">
       <div class="page-container page-header__nav-main">
-        <nav class="page-header__nav">
+        <div class="logo">
           <a href="index.html" class="page-header__logo"
             >Web<span class="page-header__logo-second">Studio</span>
           </a>
-
+        </div>
+        <button
+          type="button"
+          class="menu-button is-open"
+          aria-expanded="false"
+          aria-controls="menu-container"
+          data-menu-button
+        >
+          <svg
+            width="40"
+            height="40"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use
+              class="icon-cross"
+              href="./images/symbol-defs.svg#close_menu"
+            ></use>
+            <use class="icon-menu" href="./images/symbol-defs.svg#menu"></use>
+          </svg>
+        </button>
+        <nav
+          class="page-header__nav menu-container is-open"
+          id="menu-container"
+          data-menu
+        >
           <ul class="site-nav">
             <li class="site-nav__item">
               <a href="./index.html " class="site-nav__link">Студия</a>
@@ -40,26 +64,60 @@
               <a href="./index.html" class="site-nav__link">Контакты</a>
             </li>
           </ul>
-        </nav>
 
-        <ul class="site-contacts">
-          <li class="site-contacts__item">
-            <a href="mailto:info@devstudio.com" class="site-contacts__link">
-              <svg class="site-contacts__icon" width="16" height="12">
-                <use href="./images/symbol-defs.svg#envelope"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="site-contacts__item">
-            <a href="tel:+380961111111" class="site-contacts__link">
-              <svg class="site-contacts__icon" width="10" height="16">
-                <use href="./images/symbol-defs.svg#smartphone"></use>
-              </svg>
-              +38 096 111 11 11
-            </a>
-          </li>
-        </ul>
+          <ul class="site-contacts">
+            <li class="site-contacts__item">
+              <a
+                href="mailto:info@devstudio.com"
+                class="site-contacts__link mailto"
+              >
+                <svg class="site-contacts__icon" width="16" height="12">
+                  <use href="./images/symbol-defs.svg#envelope"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="site-contacts__item">
+              <a
+                href="tel:+380961111111"
+                class="site-contacts__link smartphone"
+              >
+                <svg class="site-contacts__icon" width="10" height="16">
+                  <use href="./images/symbol-defs.svg#smartphone"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
+            </li>
+          </ul>
+          <ul class="social-networks">
+            <li class="social-networks__item">
+              <a href="https://www.instagram.com/" class="social-networks__link"
+                >Instagram
+                <svg class="social-networks__icon" width="22" height="0">
+                  <use href="./images/symbol-defs.svg#dizer"></use></svg
+              ></a>
+            </li>
+            <li class="social-networks__item">
+              <a href="https://twitter.com/" class="social-networks__link"
+                >Twitter
+                <svg class="social-networks__icon" width="22" height="0">
+                  <use href="./images/symbol-defs.svg#dizer"></use></svg
+              ></a>
+            </li>
+            <li class="social-networks__item">
+              <a href="https://facebook.com/" class="social-networks__link"
+                >Facebook
+                <svg class="social-networks__icon" width="22" height="0">
+                  <use href="./images/symbol-defs.svg#dizer"></use></svg
+              ></a>
+            </li>
+            <li class="social-networks__item">
+              <a href="https://linkedin.com/" class="social-networks__link"
+                >LinkedIn</a
+              >
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
     <main class="portfolio-content">
@@ -331,5 +389,7 @@
         </form>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
