@@ -1,44 +1,50 @@
 .logo {
-
-    font-family: Raleway;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1.16;
-    letter-spacing: 0.03em;
-    @media screen and (min-width: 1200px) {
-        font-size: 26px;
-        line-height: 1.19;
-    }
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 .page-header__logo {
+  color: $accent-color;
+  &:hover,
+  &:focus {
     color: $accent-color;
-    &:hover, &:focus {
-        color: $accent-color;
-    }
+  }
 }
 .page-header__logo-second {
-    color: #000;
+  color: #000;
 }
 .footer-logo {
-    margin-bottom: 20px;
-    font-family: Raleway;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1.16;
-    letter-spacing: 0.03em;
+  margin-bottom: 20px;
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
 
-    @media screen and (min-width: 1200px) {
-        font-size: 26px;
-        line-height: 1.19;
-    }
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+    margin-left: 0px;
+  }
 }
 .footer-logo__one {
-    text-decoration: none;
+  text-decoration: none;
+  color: $accent-color;
+  &:hover,
+  &:focus {
     color: $accent-color;
-    &:hover, &:focus {
-        color: $accent-color;
-    }
+  }
 }
 .footer-logo__two {
-    color: $primary-white-color;
+  color: $primary-white-color;
 }
