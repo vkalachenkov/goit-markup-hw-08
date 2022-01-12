@@ -9,7 +9,7 @@
 }
 .team-list {
   & img {
-    object-fit: cover;
+    object-fit: contain;
     width: 450px;
     height: 460px;
   }
