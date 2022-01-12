@@ -7,6 +7,10 @@
   margin: 0;
   background: $primary-white-color;
   border-bottom: 1px solid #ececec;
+
+  @media screen and (max-width: 767px;) {
+    justify-content: space-between;
+  }
 }
 
 .page-header__nav-main {

@@ -95,12 +95,12 @@
 .network-list__item {
   border-radius: 50%;
   margin-right: 10px;
-  transition: background 250ms $transition-timing-function,
+  transition: background-color 250ms $transition-timing-function,
     border 250ms $transition-timing-function;
   &:hover,
   &:focus {
     border: 1px solid $accent-color;
-    background: $accent-color;
+    background-color: $accent-color;
   }
   &:last-child {
     margin-right: 0;
@@ -161,7 +161,7 @@
   @media screen and (max-width: 1199px) {
     margin-left: auto;
     margin-right: auto;
-    min-width: 450px;
+    width: 100%;
   }
 }
 .footer-field__input::placeholder {
