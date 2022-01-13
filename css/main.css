@@ -252,8 +252,8 @@ body.modal-open {
   display: block;
   top: 50%;
   left: 50%;
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   border-radius: 4px;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
@@ -266,10 +266,10 @@ body.modal-open {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .modal {
-    max-width: 450px;
-    width: 100%;
+    width: 528px;
+    height: 581px;
   }
 }
 
