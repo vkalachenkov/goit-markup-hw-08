@@ -146,17 +146,33 @@
           <ul class="soft-list">
             <li class="soft-list__item">
               <div class="description">
-                <img
-                  srcset="
-                    ./images/laptop-1x.jpg  480w,
-                    ./images/laptop-2x.jpg  768w,
-                    ./images/laptop-3x.jpg 1200w
-                  "
-                  sizes="(max-width: 767px) 450px, (max-width: 1199px) 354px,
-                (min-width: 1200px) 370px"
-                  src="./images/laptop.jpg"
-                  alt="laptop"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/img-1200/laptop@1200.jpg    1x,
+                      ./images/img-1200/laptop@1200-2x.jpg 2x,
+                      ./images/img-1200/laptop@1200-3x.jpg 3x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/img-768/laptop@768-1x.jpg 1x,
+                      ./images/img-768/laptop@768-2x.jpg 2x,
+                      ./images/img-768/laptop@768-3x.jpg 3x
+                    "
+                  />
+                  <source
+                    media="(min-width: 320px)"
+                    srcset="
+                      ./images/img-480/laptop@1x.jpg 1x,
+                      ./images/img-480/laptop@2x.jpg 2x,
+                      ./images/img-480/laptop@3x.jpg 3x
+                    "
+                  />
+                  <img src="./images/laptop.jpg" alt="laptop" />
+                </picture>
                 <div class="wrapper">
                   <p class="description-info">
                     Технокряк это современная площадка распространения
@@ -172,18 +188,33 @@
             </li>
             <li class="soft-list__item">
               <div class="description">
-                <img
-                  srcset="
-                    ./images/poster-1x.jpg  480w,
-                    ./images/poster-2x.jpg  768w,
-                    ./images/poster-3x.jpg 1200w
-                  "
-                  sizes="(max-width: 767px) 450px,
-                         (max-width: 1199px) 354px,
-                         (min-width: 1200px) 370px"
-                  src="./images/poster.jpg"
-                  alt="poster"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/img-1200/poster@1200.jpg    1x,
+                      ./images/img-1200/poster@1200-2x.jpg 2x,
+                      ./images/img-1200/poster@1200-3x.jpg 3x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/img-768/poster@768-1x.jpg 1x,
+                      ./images/img-768/poster@768-2x.jpg 2x,
+                      ./images/img-768/poster@768-3x.jpg 3x
+                    "
+                  />
+                  <source
+                    media="(min-width: 320px)"
+                    srcset="
+                      ./images/img-480/poster@1x.jpg 1x,
+                      ./images/img-480/poster@2x.jpg 2x,
+                      ./images/img-480/poster@3x.jpg 3x
+                    "
+                  />
+                  <img src="./images/poster.jpg" alt="poster" />
+                </picture>
                 <div class="wrapper">
                   <p class="description-info">
                     Технокряк это современная площадка распространения
@@ -201,18 +232,36 @@
             </li>
             <li class="soft-list__item">
               <div class="description">
-                <img
-                  srcset="
-                    ./images/restaurant-1x.jpg  480w,
-                    ./images/restaurant-2x.jpg  768w,
-                    ./images/restaurant-3x.jpg 1200w
-                  "
-                  sizes="(max-width: 767px) 450px,
-                         (max-width: 1199px) 354px,
-                         (min-width: 1200px) 370px"
-                  src="./images/logo-restaurant.jpg"
-                  alt="restaurant"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/img-1200/logo-restaurant@1200.jpg    1x,
+                      ./images/img-1200/logo-restaurant@1200-2x.jpg 2x,
+                      ./images/img-1200/logo-restaurant@1200-3x.jpg 3x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/img-768/logo-restaurant@768-1x.jpg 1x,
+                      ./images/img-768/logo-restaurant@768-2x.jpg 2x,
+                      ./images/img-768/logo-restaurant@768-3x.jpg 3x
+                    "
+                  />
+                  <source
+                    media="(min-width: 320px)"
+                    srcset="
+                      ./images/img-480/logo-restaurant@1x.jpg 1x,
+                      ./images/img-480/logo-restaurant@2x.jpg 2x,
+                      ./images/img-480/logo-restaurant@3x.jpg 3x
+                    "
+                  />
+                  <img
+                    src="./images/logo-restaurant.jpg"
+                    alt="logo-restaurant"
+                  />
+                </picture>
                 <div class="wrapper">
                   <p class="description-info">
                     Технокряк это современная площадка распространения
@@ -228,18 +277,33 @@
             </li>
             <li class="soft-list__item">
               <div class="description">
-                <img
-                  srcset="
-                    ./images/headphones-1x.jpg  480w,
-                    ./images/headphones-2x.jpg  768w,
-                    ./images/headphones-3x.jpg 1200w
-                  "
-                  sizes="(max-width: 767px) 450px,
-                         (max-width: 1199px) 354px,
-                         (min-width: 1200px) 370px"
-                  src="./images/headphones.jpg"
-                  alt="headphones"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/img-1200/headphones@1200.jpg    1x,
+                      ./images/img-1200/headphones@1200-2x.jpg 2x,
+                      ./images/img-1200/headphones@1200-3x.jpg 3x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/img-768/headphones@768-1x.jpg 1x,
+                      ./images/img-768/headphones@768-2x.jpg 2x,
+                      ./images/img-768/headphones@768-3x.jpg 3x
+                    "
+                  />
+                  <source
+                    media="(min-width: 320px)"
+                    srcset="
+                      ./images/img-480/headphones@1x.jpg 1x,
+                      ./images/img-480/headphones@2x.jpg 2x,
+                      ./images/img-480/headphones@3x.jpg 3x
+                    "
+                  />
+                  <img src="./images/headphones.jpg" alt="headphones" />
+                </picture>
                 <div class="wrapper">
                   <p class="description-info">
                     Технокряк это современная площадка распространения
@@ -255,18 +319,33 @@
             </li>
             <li class="soft-list__item">
               <div class="description">
-                <img
-                  srcset="
-                    ./images/box-1x.jpg  480w,
-                    ./images/box-2x.jpg  768w,
-                    ./images/box-3x.jpg 1200w
-                  "
-                  sizes="(max-width: 767px) 450px,
-                         (max-width: 1199px) 354px,
-                         (min-width: 1200px) 370px"
-                  src="./images/box.jpg"
-                  alt="box"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/img-1200/box@1200.jpg    1x,
+                      ./images/img-1200/box@1200-2x.jpg 2x,
+                      ./images/img-1200/box@1200-3x.jpg 3x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/img-768/box@768-1x.jpg 1x,
+                      ./images/img-768/box@768-2x.jpg 2x,
+                      ./images/img-768/box@768-3x.jpg 3x
+                    "
+                  />
+                  <source
+                    media="(min-width: 320px)"
+                    srcset="
+                      ./images/img-480/box@1x.jpg 1x,
+                      ./images/img-480/box@2x.jpg 2x,
+                      ./images/img-480/box@3x.jpg 3x
+                    "
+                  />
+                  <img src="./images/box.jpg" alt="box" />
+                </picture>
                 <div class="wrapper">
                   <p class="description-info">
                     Технокряк это современная площадка распространения
@@ -282,18 +361,33 @@
             </li>
             <li class="soft-list__item">
               <div class="description">
-                <img
-                  srcset="
-                    ./images/monoblock-1x.jpg  480w,
-                    ./images/monoblock-2x.jpg  768w,
-                    ./images/monoblock-3x.jpg 1200w
-                  "
-                  sizes="(max-width: 767px) 450px,
-                         (max-width: 1199px) 354px,
-                         (min-width: 1200px) 370px"
-                  src="./images/monoblock.jpg"
-                  alt="monoblock"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/img-1200/monoblock@1200.jpg    1x,
+                      ./images/img-1200/monoblock@1200-2x.jpg 2x,
+                      ./images/img-1200/monoblock@1200-3x.jpg 3x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/img-768/monoblock@768-1x.jpg 1x,
+                      ./images/img-768/monoblock@768-2x.jpg 2x,
+                      ./images/img-768/monoblock@768-3x.jpg 3x
+                    "
+                  />
+                  <source
+                    media="(min-width: 320px)"
+                    srcset="
+                      ./images/img-480/monoblock@1x.jpg 1x,
+                      ./images/img-480/monoblock@2x.jpg 2x,
+                      ./images/img-480/monoblock@3x.jpg 3x
+                    "
+                  />
+                  <img src="./images/monoblock.jpg" alt="monoblock" />
+                </picture>
                 <div class="wrapper">
                   <p class="description-info">
                     Технокряк это современная площадка распространения
@@ -309,18 +403,33 @@
             </li>
             <li class="soft-list__item">
               <div class="description">
-                <img
-                  srcset="
-                    ./images/book-1x.jpg  480w,
-                    ./images/book-2x.jpg  768w,
-                    ./images/book-3x.jpg 1200w
-                  "
-                  sizes="(max-width: 767px) 450px,
-                         (max-width: 1199px) 354px,
-                         (min-width: 1200px) 370px"
-                  src="./images/book.jpg"
-                  alt="book"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/img-1200/book@1200.jpg    1x,
+                      ./images/img-1200/book@1200-2x.jpg 2x,
+                      ./images/img-1200/book@1200-3x.jpg 3x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/img-768/book@768-1x.jpg 1x,
+                      ./images/img-768/book@768-2x.jpg 2x,
+                      ./images/img-768/book@768-3x.jpg 3x
+                    "
+                  />
+                  <source
+                    media="(min-width: 320px)"
+                    srcset="
+                      ./images/img-480/book@1x.jpg 1x,
+                      ./images/img-480/book@2x.jpg 2x,
+                      ./images/img-480/book@3x.jpg 3x
+                    "
+                  />
+                  <img src="./images/book.jpg" alt="book" />
+                </picture>
                 <div class="wrapper">
                   <p class="description-info">
                     Технокряк это современная площадка распространения
@@ -336,18 +445,33 @@
             </li>
             <li class="soft-list__item">
               <div class="description">
-                <img
-                  srcset="
-                    ./images/tag-1x.jpg  480w,
-                    ./images/tag-2x.jpg  768w,
-                    ./images/tag-3x.jpg 1200w
-                  "
-                  sizes="(max-width: 767px) 450px,
-                         (max-width: 1199px) 354px,
-                         (min-width: 1200px) 370px"
-                  src="./images/tag.jpg"
-                  alt="tag"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/img-1200/tag@1200.jpg    1x,
+                      ./images/img-1200/tag@1200-2x.jpg 2x,
+                      ./images/img-1200/tag@1200-3x.jpg 3x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/img-768/tag@768-1x.jpg 1x,
+                      ./images/img-768/tag@768-2x.jpg 2x,
+                      ./images/img-768/tag@768-3x.jpg 3x
+                    "
+                  />
+                  <source
+                    media="(min-width: 320px)"
+                    srcset="
+                      ./images/img-480/tag@1x.jpg 1x,
+                      ./images/img-480/tag@2x.jpg 2x,
+                      ./images/img-480/tag@3x.jpg 3x
+                    "
+                  />
+                  <img src="./images/tag.jpg" alt="tag" />
+                </picture>
                 <div class="wrapper">
                   <p class="description-info">
                     Технокряк это современная площадка распространения
@@ -363,18 +487,36 @@
             </li>
             <li class="soft-list__item">
               <div class="description">
-                <img
-                  srcset="
-                    ./images/working-on-a-laptop-1x.jpg  480w,
-                    ./images/working-on-a-laptop-2x.jpg  768w,
-                    ./images/working-on-a-laptop-3x.jpg 1200w
-                  "
-                  sizes="(max-width: 767px) 450px,
-                         (max-width: 1199px) 354px,
-                         (min-width: 1200px) 370px"
-                  src="./images/working-on-a-laptop.jpg"
-                  alt="working"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/img-1200/working-on-a-laptop@1200.jpg    1x,
+                      ./images/img-1200/working-on-a-laptop@1200-2x.jpg 2x,
+                      ./images/img-1200/working-on-a-laptop@1200-3x.jpg 3x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/img-768/working-on-a-laptop@768-1x.jpg 1x,
+                      ./images/img-768/working-on-a-laptop@768-2x.jpg 2x,
+                      ./images/img-768/working-on-a-laptop@768-3x.jpg 3x
+                    "
+                  />
+                  <source
+                    media="(min-width: 320px)"
+                    srcset="
+                      ./images/img-480/working-on-a-laptop@1x.jpg 1x,
+                      ./images/img-480/working-on-a-laptop@2x.jpg 2x,
+                      ./images/img-480/working-on-a-laptop@3x.jpg 3x
+                    "
+                  />
+                  <img
+                    src="./images/working-on-a-laptop.jpg"
+                    alt="working-on-a-laptop"
+                  />
+                </picture>
                 <div class="wrapper">
                   <p class="description-info">
                     Технокряк это современная площадка распространения
