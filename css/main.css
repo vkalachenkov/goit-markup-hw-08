@@ -266,6 +266,12 @@ body.modal-open {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
+@media screen and (min-width: 768px) and (max-height: 580px) {
+  .modal {
+    top: 75%;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
@@ -666,9 +672,8 @@ cursor {
 
 @media screen and (max-width: 767px) {
   .site-nav {
-    padding-top: 48px;
-    padding-left: 40px;
-    padding-bottom: 302px;
+    padding: 48px 0px 0px 40px;
+    margin-bottom: 302px;
   }
 }
 
@@ -788,17 +793,17 @@ cursor {
 
 @media screen and (min-width: 1200px) {
   .site-contacts {
-    margin: 0;
-    margin-left: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0;
+    margin-left: auto;
   }
 }
 

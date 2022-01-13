@@ -23,9 +23,8 @@
 }
 .site-nav {
   @media screen and (max-width: 767px) {
-    padding-top: 48px;
-    padding-left: 40px;
-    padding-bottom: 302px;
+    padding: 48px 0px 0px 40px;
+    margin-bottom: 302px;
   }
 
   @media screen and (min-width: 768px) {
@@ -108,11 +107,11 @@
     margin-left: auto;
   }
   @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0;
     margin-left: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 }
 .site-contacts__item {
