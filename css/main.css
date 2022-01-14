@@ -150,7 +150,7 @@ body.modal-open {
   z-index: 2;
   overflow: hidden;
   margin: 0;
-  padding: 0;
+  padding: 10px 15px;
   margin-left: auto;
   border: none;
   background-color: transparent;
@@ -672,8 +672,15 @@ cursor {
 
 @media screen and (max-width: 767px) {
   .site-nav {
-    padding: 48px 0px 0px 40px;
-    margin-bottom: 302px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 58px 0px 0px 40px;
+    margin-bottom: 251px;
   }
 }
 
@@ -697,7 +704,7 @@ cursor {
 
 @media screen and (max-width: 767px) {
   .site-nav__item {
-    margin-bottom: 32px;
+    margin-bottom: 52px;
   }
   .site-nav__item:last-child {
     margin-bottom: 0;
@@ -771,23 +778,20 @@ cursor {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding: 0 0 64px 40px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    flex-direction: column-reverse;
+    padding-left: 40px;
+    padding-bottom: 64px;
   }
 }
 
 @media screen and (max-width: 1199px) {
   .site-contacts {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     margin-left: auto;
+    padding-top: 21px;
   }
 }
 
@@ -816,7 +820,7 @@ cursor {
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .site-contacts__item {
     margin-bottom: 10px;
   }
@@ -835,6 +839,12 @@ cursor {
 }
 
 .site-contacts__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-weight: 500;
   font-size: 34px;
   line-height: 1.18;
