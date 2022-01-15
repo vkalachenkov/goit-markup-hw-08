@@ -1582,7 +1582,7 @@ cursor {
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .network-container {
     display: -webkit-box;
     display: -ms-flexbox;
