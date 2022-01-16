@@ -46,7 +46,6 @@ body.modal-open {
 }
 
 .page-container {
-  max-width: 1200px;
   padding: 0px 15px;
   margin: 0px auto;
 }
@@ -147,7 +146,7 @@ body.modal-open {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  z-index: 2;
+  z-index: 5;
   overflow: hidden;
   margin: 0;
   padding: 10px 15px;
@@ -1007,9 +1006,9 @@ cursor {
 }
 
 .overlay {
-  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
+  max-width: 1600px;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.5)), to(rgba(47, 48, 58, 0.3))), url(../images/img-overlay.jpg);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.3)), url(../images/img-overlay.jpg);
   background-repeat: no-repeat;
@@ -1017,24 +1016,24 @@ cursor {
   background-size: cover;
 }
 
-@media screen and (min-device-pixel-ratio: 3), screen and (-webkit-min-device-pixel-ratio: 3), screen and (min-resolution: 288dpi), screen and (min-resolution: 3dppx) {
+@media screen and (min-width: 320px), screen and (min-device-pixel-ratio: 1), screen and (-webkit-min-device-pixel-ratio: 1), screen and (min-resolution: 96dpi), screen and (min-resolution: 1dppx) {
   .overlay {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.5)), to(rgba(47, 48, 58, 0.3))), url(../images/img-overlay@3x.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.3)), url(../images/img-overlay@3x.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.5)), to(rgba(47, 48, 58, 0.3))), url(../images/img-480/img-overlay@1x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.3)), url(../images/img-480/img-overlay@1x.jpg);
   }
 }
 
-@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px), screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .overlay {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.5)), to(rgba(47, 48, 58, 0.3))), url(../images/img-overlay@2x.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.3)), url(../images/img-overlay@2x.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.5)), to(rgba(47, 48, 58, 0.3))), url(../images/img-768/img-overlay@768-2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.3)), url(../images/img-768/img-overlay@768-2x.jpg);
   }
 }
 
-@media screen and (min-device-pixel-ratio: 1), screen and (-webkit-min-device-pixel-ratio: 1), screen and (min-resolution: 96dpi), screen and (min-resolution: 1dppx) {
+@media screen and (min-width: 1200px), screen and (min-device-pixel-ratio: 3), screen and (-webkit-min-device-pixel-ratio: 3), screen and (min-resolution: 288dpi), screen and (min-resolution: 3dppx) {
   .overlay {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.5)), to(rgba(47, 48, 58, 0.3))), url(../images/img-overlay@1x.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.3)), url(../images/img-overlay@1x.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.5)), to(rgba(47, 48, 58, 0.3))), url(../images/img-1200/img-overlay@1200-3x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.3)), url(../images/img-1200/img-overlay@1200-3x.jpg);
   }
 }
 
@@ -1114,7 +1113,7 @@ cursor {
 @media screen and (max-width: 767px) {
   .peculiarities-list__title {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
 }
 
@@ -1186,7 +1185,7 @@ cursor {
   margin: 0 auto;
   margin-bottom: 30px;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   text-align: center;
   letter-spacing: 0.03em;
   line-height: 1.17;
@@ -1196,6 +1195,12 @@ cursor {
 @media screen and (min-width: 1200px) {
   .section-title {
     margin-bottom: 50px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-title {
+    font-size: 36px;
   }
 }
 
@@ -1503,7 +1508,7 @@ cursor {
   background: #2f303a;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-markup {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1517,10 +1522,18 @@ cursor {
 
 @media screen and (min-width: 1200px) {
   .footer-markup {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-pack: baseline;
         -ms-flex-pack: baseline;
             justify-content: baseline;
   }
+}
+
+.footer-info {
+  min-width: 231px;
+  max-height: 132px;
 }
 
 @media screen and (max-width: 1199px) {
@@ -1536,6 +1549,10 @@ cursor {
         -ms-flex-align: center;
             align-items: center;
   }
+}
+
+.address {
+  margin-bottom: 0;
 }
 
 @media screen and (max-width: 1199px) {
@@ -1598,9 +1615,12 @@ cursor {
 
 @media screen and (min-width: 1200px) {
   .network-container {
+    -ms-flex-negative: 1;
+        flex-shrink: 1;
     margin-left: 70px;
     margin-top: 15px;
     min-width: 206px;
+    max-height: 80px;
   }
 }
 
@@ -1689,6 +1709,7 @@ cursor {
     margin-left: 93px;
     margin-top: 15px;
     min-width: 570px;
+    max-height: 86px;
   }
 }
 

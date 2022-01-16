@@ -5,24 +5,29 @@
 }
 
 .footer-markup {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
   }
 
   @media screen and (min-width: 1200px) {
+    display: flex;
     justify-content: baseline;
   }
 }
 .footer-info {
+  min-width: 231px;
+  max-height: 132px;
   @media screen and (max-width: 1199px) {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 }
-
+.address {
+  margin-bottom: 0;
+}
 .address-list {
   @media screen and (max-width: 1199px) {
     text-align: center;
@@ -71,9 +76,11 @@
     margin-top: 5px;
   }
   @media screen and (min-width: 1200px) {
+    flex-shrink: 1;
     margin-left: 70px;
     margin-top: 15px;
     min-width: 206px;
+    max-height: 80px;
   }
 }
 .network-title {
@@ -134,8 +141,10 @@
     margin-left: 93px;
     margin-top: 15px;
     min-width: 570px;
+    max-height: 86px;
   }
 }
+
 .footer-field__label {
   margin: 0;
   display: inline-flex;
