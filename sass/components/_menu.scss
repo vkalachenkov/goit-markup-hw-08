@@ -24,6 +24,7 @@
 }
 
 .menu-button.is-open .icon-cross {
+  position: fixed;
   display: block;
 }
 
@@ -37,18 +38,25 @@
   background: $primary-white-color;
 
   @media screen and (max-width: 767px) {
-    display: none;
     position: fixed;
+    display: none;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     z-index: 1;
+    flex: 0 0 auto;
     transform: translateX(-100%);
     transition: transform $transition-timing-function;
 
     &.is-open {
-      display: block;
+      position: fixed;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+      flex: 1 0 auto;
+      overflow-y: scroll;
       transform: translateX(0);
     }
   }
