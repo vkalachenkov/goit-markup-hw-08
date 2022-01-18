@@ -1,12 +1,12 @@
 .menu-button {
-  position: relative;
   display: inline-flex;
-  z-index: 5;
+  z-index: 3;
   overflow: hidden;
+  top: 10px;
+  left: 90%;
   margin: 0;
-  padding: 10px 15px;
   margin-left: auto;
-
+  padding: 0;
   border: none;
   background-color: transparent;
   &:hover,
@@ -35,17 +35,18 @@
 .menu-container {
   margin: 0;
   padding: 0;
+  flex: 0 auto;
   background: $primary-white-color;
 
   @media screen and (max-width: 767px) {
-    position: fixed;
+    position: relative;
     display: none;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 1;
-    flex: 0 0 auto;
+    z-index: 2;
+    overflow-y: hidden;
     transform: translateX(-100%);
     transition: transform $transition-timing-function;
 
@@ -53,10 +54,12 @@
       position: fixed;
       display: flex;
       flex-direction: column;
+      justify-content: space-between;
       width: 100%;
       height: 100%;
-      flex: 1 0 auto;
-      overflow-y: scroll;
+      flex: 1 auto;
+      visibility: visible;
+      pointer-events: initial;
       transform: translateX(0);
     }
   }

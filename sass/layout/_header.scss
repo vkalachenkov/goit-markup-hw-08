@@ -23,10 +23,12 @@
 }
 .site-nav {
   @media screen and (max-width: 767px) {
+    position: absolute;
     display: flex;
     flex-direction: column;
-    margin: 58px 0px 0px 40px;
-    margin-bottom: 300px;
+    top: 0;
+    left: 0;
+    padding: 58px 0px 0px 40px;
   }
 
   @media screen and (min-width: 768px) {
@@ -98,11 +100,14 @@
 }
 .site-contacts {
   @media screen and (max-width: 767px) {
+    position: fixed;
     display: flex;
     flex-direction: column;
     flex-direction: column-reverse;
-    margin-left: 40px;
-    margin-bottom: 64px;
+    top: 75%;
+    left: 0;
+    transform: translateY(-75%);
+    padding: 0px 0px 64px 40px;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -191,8 +196,12 @@
 .social-networks {
   display: none;
   @media screen and (max-width: 767px) {
+    position: fixed;
     display: flex;
     flex-wrap: wrap;
+    top: 90%;
+    left: 0;
+    transform: translateY(-90%);
     padding: 0 0 48px 40px;
     font-style: normal;
     font-weight: 500;
