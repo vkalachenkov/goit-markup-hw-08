@@ -195,8 +195,6 @@ body.modal-open {
   height: 100%;
   z-index: 5;
   overflow-y: hidden;
-  visibility: visible;
-  pointer-events: initial;
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
