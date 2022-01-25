@@ -8,6 +8,7 @@
     "thekalinga.bootstrap4-vscode",
     "coenraads.bracket-pair-colorizer",
     "goit.vscode-activity",
-    "dbaeumer.vscode-eslint"
+    "dbaeumer.vscode-eslint",
+    "ritwickdey.liveserver"
   ]
 }

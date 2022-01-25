@@ -101,10 +101,11 @@
   }
 }
 .network-list__item {
-  border-radius: 50%;
   margin-right: 10px;
+  border-radius: 50%;
   transition: background-color 250ms $transition-timing-function,
     border 250ms $transition-timing-function;
+
   &:hover,
   &:focus {
     border: 1px solid $accent-color;
