@@ -4,26 +4,29 @@
   margin: 0 auto;
   text-align: center;
   background: $secondary-background-color;
+
   @media screen and (min-width: 1200px) {
     padding-top: 200px;
     padding-bottom: 200px;
   }
-}
-.hero-title {
-  margin-top: 0px;
-  margin-bottom: 30px;
-  font-weight: 900;
-  font-size: 26px;
-  line-height: 1.62;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: $primary-white-color;
-  @media screen and (min-width: 1200px) {
-    font-size: 44px;
-    line-height: 1.36;
+  &-title {
+    margin-top: 0px;
+    margin-bottom: 30px;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $primary-white-color;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 44px;
+      line-height: 1.36;
+    }
   }
 }
+
 .button {
   display: inline-block;
   padding: 10px 32px;
@@ -54,22 +57,34 @@
       rgba(47, 48, 58, 0.5),
       rgba(47, 48, 58, 0.3)
     ),
-    url(../images/img-overlay.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+    url(../images/img-480/img-overlay@1x.jpg);
 
-  @media screen and (min-width: 320px),
-    screen and (min-device-pixel-ratio: 1),
-    screen and (min-resolution: 96dpi),
-    screen and (min-resolution: 1dppx) {
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.5),
         rgba(47, 48, 58, 0.3)
       ),
-      url(../images/img-480/img-overlay@1x.jpg);
+      url(../images/img-768/img-overlay@2x.jpg);
+    background-size: cover;
   }
+
+  @media screen and (min-device-pixel-ratio: 3),
+    screen and (min-resolution: 288dpi),
+    screen and (min-resolution: 3dppx) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.5),
+        rgba(47, 48, 58, 0.3)
+      ),
+      url(../images/img-1200/img-overlay@3x.jpg);
+    background-size: cover;
+  }
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
   @media screen and (min-width: 768px),
     screen and (min-device-pixel-ratio: 2),
