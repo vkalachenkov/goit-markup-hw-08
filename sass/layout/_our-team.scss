@@ -8,11 +8,6 @@
   }
 }
 .team-list {
-  & img {
-    object-fit: contain;
-    width: 450px;
-    height: 460px;
-  }
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
@@ -34,6 +29,7 @@
   }
 }
 .team-list__item {
+  width: 100%;
   &:not(:last-child) {
     @media screen and (max-width: 767px) {
       margin-bottom: 30px;
