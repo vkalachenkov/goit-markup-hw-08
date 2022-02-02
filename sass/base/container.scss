@@ -10,8 +10,10 @@ body.modal-open {
 }
 
 .page-container {
-  padding: 0px 15px;
-  margin: 0px auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 
   @media screen and (min-width: 480px) {
     width: 480px;
@@ -23,6 +25,16 @@ body.modal-open {
 
   @media screen and (min-width: 1200px) {
     width: 1200px;
+  }
+}
+
+.team {
+  padding: 60px 0px;
+  margin: 0px auto;
+  background: #f5f4fa;
+
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0px;
   }
 }
 

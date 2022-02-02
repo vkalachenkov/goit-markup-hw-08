@@ -1,4 +1,6 @@
 .hero {
+  height: 400px;
+  max-width: 580px;
   padding-top: 118px;
   padding-bottom: 118px;
   margin: 0 auto;
@@ -49,8 +51,6 @@
   }
 }
 .overlay {
-  height: 400px;
-  max-width: 580px;
   margin-left: auto;
   margin-right: auto;
   background-repeat: no-repeat;
