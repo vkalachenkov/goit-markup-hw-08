@@ -7,15 +7,15 @@
   margin: 0;
   background: $primary-white-color;
   border-bottom: 1px solid #ececec;
-
-  @media screen and (max-width: 767px) {
-    justify-content: space-between;
-  }
 }
 
 .page-header__nav-main {
   display: flex;
   align-items: center;
+
+  @media screen and (max-width: 767px) {
+    justify-content: space-between;
+  }
 
   @media screen and (min-width: 1200px) {
     justify-content: center;
