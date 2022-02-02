@@ -102,8 +102,6 @@
 }
 .network-list__item {
   border-radius: 50%;
-  transition: background-color 250ms $transition-timing-function,
-    border 250ms $transition-timing-function;
 
   &:not(:last-child) {
     margin-right: 10px;
@@ -117,6 +115,9 @@
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
   fill: $primary-white-color;
+  transition: background-color 250ms $transition-timing-function,
+    border 250ms $transition-timing-function;
+
   &:hover,
   &:focus {
     border: 1px solid $accent-color;
