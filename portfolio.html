@@ -28,17 +28,15 @@
           </a>
         </div>
         <div class="menu-btn">
-          <span>
-            <svg width="40" height="40">
-              <use
-                class="icon-cross"
-                href="./images/symbol-defs.svg#close_menu"
-              ></use>
-              <use class="icon-menu" href="./images/symbol-defs.svg#menu"></use>
-            </svg>
-          </span>
+          <svg width="40" height="40">
+            <use
+              class="icon-cross"
+              href="./images/symbol-defs.svg#close_menu"
+            ></use>
+            <use class="icon-menu" href="./images/symbol-defs.svg#menu"></use>
+          </svg>
         </div>
-        <nav class="page-header__nav menu" id="menu" data-menu>
+        <nav class="page-header__nav menu" id="menu">
           <ul class="site-nav">
             <li class="site-nav__item">
               <a href="./index.html " class="site-nav__link">Студия</a>
@@ -79,28 +77,47 @@
           </ul>
           <ul class="social-networks">
             <li class="social-networks__item">
-              <a href="https://www.instagram.com/" class="social-networks__link"
+              <a
+                href="https://www.instagram.com/"
+                class="social-networks__link"
+                target="_blank"
+                rel="noopener noreferer"
                 >Instagram
                 <svg class="social-networks__icon" width="22" height="0">
-                  <use href="./images/symbol-defs.svg#dizer"></use></svg
-              ></a>
+                  <use href="./images/symbol-defs.svg#dizer"></use>
+                </svg>
+              </a>
             </li>
             <li class="social-networks__item">
-              <a href="https://twitter.com/" class="social-networks__link"
+              <a
+                href="https://twitter.com/"
+                class="social-networks__link"
+                target="_blank"
+                rel="noopener noreferer"
                 >Twitter
                 <svg class="social-networks__icon" width="22" height="0">
-                  <use href="./images/symbol-defs.svg#dizer"></use></svg
-              ></a>
+                  <use href="./images/symbol-defs.svg#dizer"></use>
+                </svg>
+              </a>
             </li>
             <li class="social-networks__item">
-              <a href="https://facebook.com/" class="social-networks__link"
+              <a
+                href="https://facebook.com/"
+                class="social-networks__link"
+                target="_blank"
+                rel="noopener noreferer"
                 >Facebook
                 <svg class="social-networks__icon" width="22" height="0">
-                  <use href="./images/symbol-defs.svg#dizer"></use></svg
-              ></a>
+                  <use href="./images/symbol-defs.svg#dizer"></use>
+                </svg>
+              </a>
             </li>
             <li class="social-networks__item">
-              <a href="https://linkedin.com/" class="social-networks__link"
+              <a
+                href="https://linkedin.com/"
+                class="social-networks__link"
+                target="_blank"
+                rel="noopener noreferer"
                 >LinkedIn</a
               >
             </li>
@@ -345,7 +362,11 @@
                       ./images/img-480/box@3x.jpg 3x
                     "
                   />
-                  <img src="./images/img-1200/box@1200.jpg" alt="box" class="soft-list__item-img" />
+                  <img
+                    src="./images/img-1200/box@1200.jpg"
+                    alt="box"
+                    class="soft-list__item-img"
+                  />
                 </picture>
                 <div class="wrapper">
                   <p class="description-info">
@@ -433,7 +454,11 @@
                       ./images/img-480/book@3x.jpg 3x
                     "
                   />
-                  <img src="./images/img-1200/book@1200.jpg" alt="book" class="soft-list__item-img"/>
+                  <img
+                    src="./images/img-1200/book@1200.jpg"
+                    alt="book"
+                    class="soft-list__item-img"
+                  />
                 </picture>
                 <div class="wrapper">
                   <p class="description-info">
@@ -475,7 +500,11 @@
                       ./images/img-480/tag@3x.jpg 3x
                     "
                   />
-                  <img src="./images/img-1200/tag@1200.jpg" alt="tag" class="soft-list__item-img"/>
+                  <img
+                    src="./images/img-1200/tag@1200.jpg"
+                    alt="tag"
+                    class="soft-list__item-img"
+                  />
                 </picture>
                 <div class="wrapper">
                   <p class="description-info">
@@ -540,6 +569,7 @@
         </div>
       </section>
     </main>
+    <!--basement-->
     <footer class="footer">
       <div class="page-container footer-markup">
         <div class="footer-info">
@@ -548,52 +578,76 @@
               >Web<span class="footer-logo__two">Studio</span>
             </a>
           </div>
-          <div class="address-container">
-            <address class="address">
-              <ul class="address-list">
-                <li class="address-list__item accurate">
-                  г. Киев, пр-т Леси Украинки, 26
-                </li>
-                <li class="address-list__item">
-                  <a href="mailto:info@devstudio.com" class="address-list__link"
-                    >info@devstudio.com</a
-                  >
-                </li>
-                <li class="address-list__item">
-                  <a href="tel:+380961111111" class="address-list__link"
-                    >+38 096 111 11 11</a
-                  >
-                </li>
-              </ul>
-            </address>
-          </div>
+          <address class="address">
+            <ul class="address-list">
+              <li class="address-list__item">
+                <a
+                  href="https://goo.gl/maps/mBAU42XWuLWp58m89"
+                  class="accurate"
+                  target="_blank"
+                  rel="noopener noreferer"
+                  >г. Киев, пр-т Леси Украинки, 26</a
+                >
+              </li>
+              <li class="address-list__item">
+                <a href="mailto:info@devstudio.com" class="address-list__link"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="address-list__item">
+                <a href="tel:+380961111111" class="address-list__link"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
         </div>
         <div class="network-container">
           <h3 class="network-title">присоединяйтесь</h3>
           <ul class="network-list">
             <li class="network-list__item">
-              <a href="https://www.instagram.com/" class="network-list__link">
+              <a
+                href="https://www.instagram.com/"
+                class="network-list__link"
+                target="_blank"
+                rel="noopener noreferer"
+              >
                 <svg class="network-list__icon" width="20" height="20">
                   <use href="./images/symbol-defs.svg#instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="network-list__item">
-              <a href="https://twitter.com/" class="network-list__link">
+              <a
+                href="https://twitter.com/"
+                class="network-list__link"
+                target="_blank"
+                rel="noopener noreferer"
+              >
                 <svg class="network-list__icon" width="20" height="20">
                   <use href="./images/symbol-defs.svg#twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="network-list__item">
-              <a href="https://facebook.com/" class="network-list__link">
+              <a
+                href="https://facebook.com/"
+                class="network-list__link"
+                target="_blank"
+                rel="noopener noreferer"
+              >
                 <svg class="network-list__icon" width="20" height="20">
                   <use href="./images/symbol-defs.svg#facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="network-list__item">
-              <a href="https://linkedin.com/" class="network-list__link">
+              <a
+                href="https://linkedin.com/"
+                class="network-list__link"
+                target="_blank"
+                rel="noopener noreferer"
+              >
                 <svg class="network-list__icon" width="20" height="20">
                   <use href="./images/symbol-defs.svg#linkedin"></use>
                 </svg>
@@ -610,8 +664,8 @@
               <input
                 class="footer-field__input"
                 type="email"
-                name="mail"
-                id="mail"
+                name="email"
+                id="email"
                 placeholder="E-mail"
               />
 
