@@ -112,6 +112,7 @@
   padding: 12px;
   width: 44px;
   height: 44px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
   fill: $primary-white-color;
@@ -120,7 +121,7 @@
 
   &:hover,
   &:focus {
-    border: 1px solid $accent-color;
+    border: $accent-color;
     background-color: $accent-color;
     fill: $primary-white-color;
   }
