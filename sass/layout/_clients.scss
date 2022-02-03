@@ -1,66 +1,76 @@
-
 .clients {
-    padding-top: 60px;
-    padding-bottom: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
-    @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     padding-top: 94px;
     padding-bottom: 94px;
-    }
+  }
 }
 .clients-list {
-    display: flex;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+
+  @media screen and (max-width: 1199px) {
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin: -15px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 50px;
+  }
 }
 
 .clients-list__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 210px;
-    height: 92px;
-    @media screen and (min-width: 768) {
-        width: 226px;
-        
-    }
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
+
 .clients-list__item {
-    display: flex;
-    justify-content: center;
-    width: calc((100% - 6 * 15px) / 2);
-    margin: 15px;
-    border: 1px solid #afb1b8;
-    border-radius: 4px;
-    transition: color 250ms $transition-timing-function,
+  display: flex;
+  justify-content: center;
+  height: 90px;
+  @media screen and (max-width: 767px) {
+    width: calc((100% - 30px) / 2);
+    &:nth-child(2n) {
+      margin-left: 30px;
+    }
+    &:not(:nth-child(-n + 2)) {
+      margin-top: 30px;
+    }
+  }
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  transition: color 250ms $transition-timing-function,
     border 250ms $transition-timing-function;
-    &:hover, &:focus {
+  &:hover,
+  &:focus {
     border: 1px solid $accent-color;
-    }
+  }
 
-    @media screen and (min-width: 768px) {
-        width: calc((100% - 6 * 15px) / 3);
-        margin: 15px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: calc((100% - 60px) / 3);
+    &:not(:nth-child(3n)) {
+      margin-right: 30px;
     }
-
-    @media screen and (min-width: 1200px) {
-        width: 170px;
-        height: 92px;
-        margin-right: 15px;
-    &:last-child {
-        margin-right: 0;
+    &:not(:nth-child(-n + 3)) {
+      margin-top: 30px;
     }
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 120px) / 6);
+    &:not(:last-child) {
+      margin-right: 30px;
     }
-    
+  }
 }
 .clients-list__icon {
-    transition: fill 250ms $transition-timing-function;
-    fill: $primary-icon-color;
-    .clients-list__item:hover &,
-    .clients-list__item:focus & {
-        fill: $accent-color;
-    }
+  transition: fill 250ms $transition-timing-function;
+  fill: $primary-icon-color;
+  .clients-list__item:hover &,
+  .clients-list__item:focus & {
+    fill: $accent-color;
+  }
 }
