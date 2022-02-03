@@ -1217,6 +1217,11 @@ cursor {
   position: relative;
 }
 
+.wedo__images {
+  display: block;
+  width: 100%;
+}
+
 .strip {
   position: absolute;
   display: -webkit-box;

@@ -298,11 +298,27 @@
           <ul class="we-doing-list">
             <li class="we-doing-list__item">
               <div class="img-doing">
-                <img
-                  src="./images/picture1squoosh.jpg"
-                  width="370"
-                  alt="notebook"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/we-doing/we-doing-370.webp 1x,
+                      ./images/we-doing/we-doing-740.webp 2x
+                    "
+                    type="image/webp"
+                  />
+
+                  <img
+                    class="wedo__images"
+                    srcset="
+                      ./images/we-doing/we-doing-370.jpg 1x,
+                      ./images/we-doing/we-doing-740.jpg 2x
+                    "
+                    src="./images/we-doing/we-doing-370.jpg"
+                    alt="разработка программного обеспечения"
+                    width="370"
+                    height="294"
+                  />
+                </picture>
                 <div class="strip">
                   <p class="strip-text">Десктопные приложения</p>
                 </div>
@@ -310,11 +326,27 @@
             </li>
             <li class="we-doing-list__item">
               <div class="img-doing">
-                <img
-                  src="./images/picture2squoosh.jpg"
-                  width="370"
-                  alt="phone"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/we-doing/we-doing2-370.webp 1x,
+                      ./images/we-doing/we-doing2-740.webp 2x
+                    "
+                    type="image/webp"
+                  />
+
+                  <img
+                    class="wedo__images"
+                    srcset="
+                      ./images/we-doing/we-doing2-370.jpg 1x,
+                      ./images/we-doing/we-doing2-740.jpg 2x
+                    "
+                    src="./images/we-doing/we-doing2-370.jpg"
+                    width="370"
+                    height="294"
+                    alt="разработка мобильных приложений"
+                  />
+                </picture>
                 <div class="strip">
                   <p class="strip-text">Мобильные приложения</p>
                 </div>
@@ -322,11 +354,27 @@
             </li>
             <li class="we-doing-list__item">
               <div class="img-doing">
-                <img
-                  src="./images/picture3squoosh.jpg"
-                  width="370"
-                  alt="tablet"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/we-doing/we-doing3-370.webp 1x,
+                      ./images/we-doing/we-doing3-740.webp 2x
+                    "
+                    type="image/webp"
+                  />
+
+                  <img
+                    class="wedo__images"
+                    srcset="
+                      ./images/we-doing/we-doing3-370.jpg 1x,
+                      ./images/we-doing/we-doing3-740.jpg 2x
+                    "
+                    src="./images/we-doing/we-doing3-370.jpg"
+                    width="370"
+                    height="294"
+                    alt="разработка дизайна веб страниц"
+                  />
+                </picture>
                 <div class="strip">
                   <p class="strip-text">Дизайнерские решения</p>
                 </div>
@@ -889,7 +937,7 @@
         <div class="form-container">
           <form class="form-footer">
             <div class="footer-field">
-              <label for="mail" class="footer-field__label"
+              <label for="email" class="footer-field__label"
                 >Подпишитесь на рассылку
                 <input
                   class="footer-field__input"
